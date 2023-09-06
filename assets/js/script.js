@@ -37,3 +37,41 @@ Barbara Ramos
 Graphic Designer	
 barbara-ramos-graphic-designer.jpg
 */
+
+/* 
+MILESTONE 0:
+Creare l’array di oggetti con le informazioni fornite. 
+*/
+
+const team = [
+    {
+        fullName: 'Wayne Barnett',
+        position: 'Founder & CEO',
+        image: './assets/img/wayne-barnett-founder-ceo.jpg'  
+    },
+    {
+        fullName: 'Angela Caroll',
+        position: 'Chief Editor',
+        image: './assets/img/angela-lopez-social-media-manager.jpg'  
+    },
+    {
+        fullName: 'Walter Gordon',
+        position: 'Office Manager',
+        image: './assets/img/walter-gordon-ofice-manager.jpg'  
+    },
+    {
+        fullName: 'Angela Lopez',
+        position: 'Social Media Manager',
+        image: './assets/img/angela-lopez-social-media-manager.jpg'  
+    },
+    {
+        fullName: 'Scott Estrada',
+        position: 'Developer',
+        image: './assets/img/scott-estrada-developer.jpg'  
+    },
+    {
+        fullName: 'Barbara Ramos',
+        position: 'Graphic Designer',
+        image: './assets/img/barbara-ramos-graphic-designer.jpg'  
+    },
+]
