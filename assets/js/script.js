@@ -105,7 +105,7 @@ for (let i = 0; i < team.length; i++) {
     const memberMarkup = `<div class="col-4">
         <div class="card my-3">
             <div class="card-img">
-            <img class="img-fluid" src="${member.image}" alt>
+            <img class="img-fluid card-img-top" src="${member.image}" alt>
             </div>
             <div class="card-body">
                 <h4>Nome: ${member.fullName}</h4>
@@ -124,3 +124,8 @@ for (let i = 0; i < team.length; i++) {
     }
 
 }
+
+/*
+per il bonus aggiuntivo, puoi fare una form che ti permette di aggiungere un nuovo membro del team.
+per l’immagine va bene usare semplicemente una url causale da picsum oppure anche la stessa immagine.
+*/
