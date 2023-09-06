@@ -136,15 +136,6 @@ const addMemberForm = document.getElementById("addMember");
 const submitEl = document.getElementById('submit');
 
 
-
-
-//team.push(newMember);
-//console.log(team);
-
-for (const key in team){
-    //console.log(team[key]);
-}
-
 addMemberForm.addEventListener('submit', function (e){
     e.preventDefault();
 
@@ -160,6 +151,23 @@ addMemberForm.addEventListener('submit', function (e){
     //console.log(newMember);
     team.push(newMember);
     console.log(team);
+
+    //stampo in pagina il nuovo membro del team
+    const memberMarkup = `<div class="col-4">
+        <div class="card my-3">
+            <div class="card-img">
+            <img class="img-fluid card-img-top" src="${newMember.image}" alt>
+            </div>
+            <div class="card-body">
+                <h4>Nome: ${newMember.name}</h4>
+                <h5>Ruolo: ${newMember.position}</h5>
+            </div>
+        </div>
+    </div>`
+
+    teamMembersElement.insertAdjacentHTML('beforeend', memberMarkup);
+
+
 
 
 });
