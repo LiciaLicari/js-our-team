@@ -1,4 +1,4 @@
-console.log("miao");
+//console.log("miao");
 
 /*
     Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team. 
@@ -86,7 +86,7 @@ for (let i = 0; i < team.length; i++) {
     const member = team[i];
 
     for (const key in member) {
-        console.log(`key - ${key} : value - ${member[key]}`);
+        //console.log(`key - ${key} : value - ${member[key]}`);
     }
 }
 
@@ -116,17 +116,53 @@ for (let i = 0; i < team.length; i++) {
 
     teamMembersElement.insertAdjacentHTML('beforeend', memberMarkup);
 
-    console.log(member);
+    //console.log(member);
 
     for (const key in member) {
 
-        console.log(key, member[key]);
+        //console.log(key, member[key]);
     }
 
 }
+
 
 /*
 per il bonus aggiuntivo, puoi fare una form che ti permette di aggiungere un nuovo membro del team.
 per l’immagine va bene usare semplicemente una url causale da picsum oppure anche la stessa immagine.
 */
+
+const addMemberForm = document.getElementById("addMember");
+//console.log(addMemberForm);
+const submitEl = document.getElementById('submit');
+
+
+
+
+//team.push(newMember);
+//console.log(team);
+
+for (const key in team){
+    //console.log(team[key]);
+}
+
+addMemberForm.addEventListener('submit', function (e){
+    e.preventDefault();
+
+    const newMemberName = document.getElementById("placeName").value; // prendo i valori inseriti
+    const newMemberPosition = document.getElementById("placePosition").value; // prendo i valori inseriti
+    //console.log(newMemberName, newMemberPosition);
+
+    const newMember = { //creo il nuovo member
+        name: newMemberName,
+        position: newMemberPosition,
+        image: './assets/img/wayne-barnett-founder-ceo.jpg'
+    }
+    //console.log(newMember);
+    team.push(newMember);
+    console.log(team);
+
+
+});
+
+
 
