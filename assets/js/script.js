@@ -129,3 +129,4 @@ for (let i = 0; i < team.length; i++) {
 per il bonus aggiuntivo, puoi fare una form che ti permette di aggiungere un nuovo membro del team.
 per l’immagine va bene usare semplicemente una url causale da picsum oppure anche la stessa immagine.
 */
+
