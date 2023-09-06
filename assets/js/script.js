@@ -57,7 +57,7 @@ const team = [
     {
         fullName: 'Walter Gordon',
         position: 'Office Manager',
-        image: './assets/img/walter-gordon-ofice-manager.jpg'
+        image: './assets/img/walter-gordon-office-manager.jpg'
     },
     {
         fullName: 'Angela Lopez',
@@ -105,7 +105,7 @@ for (let i = 0; i < team.length; i++) {
     const memberMarkup = `<div class="col-4">
         <div class="card my-3">
             <div class="card-img">
-            <img class="img-fluid" src="${member.img}" alt>
+            <img class="img-fluid" src="${member.image}" alt>
             </div>
             <div class="card-body">
                 <h4>Nome: ${member.fullName}</h4>
